@@ -1,0 +1,144 @@
+body{
+    font-family: sans-serif;
+}
+
+/* SCROLL CSS */
+    /* Tamaño del scroll */
+    .nav1::-webkit-scrollbar {
+        width: 3px;   /* grosor del scroll */
+    }
+    /* Estilos barra (thumb) de scroll */
+    .nav1::-webkit-scrollbar-thumb {
+        background: rgb(153, 183, 238); /* color del scroll */
+        border-radius: 4px;
+    }
+    .nav1::-webkit-scrollbar-thumb:active {
+        background-color: #999999;
+    }
+    .nav1::-webkit-scrollbar-thumb:hover {
+        background: #b3b3b3;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    /* Estilos track de scroll */
+    .nav1::-webkit-scrollbar-track {
+        background: #e1e1e1;
+        order-radius: 4px;
+    }
+    .nav1::-webkit-scrollbar-track:hover,
+    .nav1::-webkit-scrollbar-track:active {
+        background: #d4d4d4;
+    }
+    .tarjeta {
+        height:100vh;
+        top: 120px;
+    }
+
+/* TARJETA CSS */
+    .rb-box {
+        width: 75%;
+        max-width: 300px;
+        margin: 10px auto;
+        padding: 1.3em;
+        /*background: #292942; color de fondo de caja general */
+        background: #F7D2F0;
+        border-radius: .5em;
+        -webkit-filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
+        filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
+
+    }
+
+    /* Custom Radio Button */
+    p {
+        font-size: .8em;
+    }
+
+    .rb {
+        padding: 1px 0; /* para espacio vert entre botones*/
+        text-align: center;
+        /*background: rgba(255,255,255,.03); color de fondo de cada linea*/
+        background: rgba(255,255,255,.5);
+        border-radius: .3em;
+        /* aumento de linea en el borde*/
+        border: .2px dashed rgba(255,0,0,.1);
+    }
+
+    .rb-tab {
+        display: inline-block;
+        position: relative;
+        width: 14%; /* para espacio horiz entre botones*/
+    }
+
+    .rb-txt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: .7em;
+        /*color: #FFFFFF; color de la letra*/
+        color: #900;
+    }
+
+    .rb-spot {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+        background: transparent;
+        /*border: 2px solid rgba(255,255,255,.3); color del borde del radio*/
+        border: 2px solid rgba(186,6,24,.5);
+        border-radius: 100%;
+        cursor: pointer;
+        transition: ease .5s;
+    }
+
+    .rb-tab-active .rb-spot {
+        background: rgba(0,0,0,.35);
+        border: 2px solid rgba(243,49,128,.6);
+    }
+
+    /* Submit Button */
+    .button-box {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    button {
+        display: inline-block;
+        width: 80%;
+        margin-top: 1.2em;
+        padding: 1em;
+        max-width: 220px;
+        font-size: .9em;
+        /*color: #D42D78; color de texto del boton*/
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: .15em;
+        /*background: white; color del fondo del boton*/
+        background: #95333D;
+        border: none;
+        outline: none;
+        border-radius: 5em;
+        box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.3);
+        transition:
+        color 0.6s,
+        box-shadow 0.3s,
+        transform 0.3s;
+        cursor: pointer;
+    }
+
+    button:hover {
+        box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
+        /*color: #6f6f6f;*/
+        color: #E6FA64;
+        /*aumento colro de hover*/
+        background: #BA5C6F;
+    }
+
+    #cajon-radio-button {
+    color: black;
+    font-size: .9em;
+    text-align: center;
+    }
