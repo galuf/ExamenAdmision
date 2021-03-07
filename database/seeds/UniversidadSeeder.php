@@ -13,7 +13,7 @@ class UniversidadSeeder extends Seeder
     public function run()
     {
         $uni = new Universidad;
-        $uni->nombre = "UNA";
+        $uni->nombre = "UNA - Puno";
         $uni->save();
     }
 }

@@ -10937,7 +10937,7 @@ body {
 
 .nav1::-webkit-scrollbar-track {
   background: #e1e1e1;
-  order-radius: 4px;
+  border-radius: 4px;
 }
 
 .nav1::-webkit-scrollbar-track:hover,
@@ -10958,7 +10958,7 @@ body {
   margin: 10px auto;
   padding: 1.3em;
   /*background: #292942; color de fondo de caja general */
-  background: #F7D2F0;
+  background: #f7d2f0;
   border-radius: 0.5em;
   filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.3));
 }
@@ -10978,6 +10978,19 @@ p {
   border-radius: 0.3em;
   /* aumento de linea en el borde*/
   border: 0.2px dashed rgba(255, 0, 0, 0.1);
+}
+
+.rb_adm {
+  padding: 1px 0;
+  /* para espacio vert entre botones*/
+  text-align: center;
+  /*background: rgba(255,255,255,.03); color de fondo de cada linea*/
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 0.3em;
+  /* aumento de linea en el borde*/
+  border: 0.2px dashed rgba(255, 0, 0, 0.1);
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .rb-tab {
@@ -11037,7 +11050,7 @@ button {
   text-decoration: none;
   letter-spacing: 0.15em;
   /*background: white; color del fondo del boton*/
-  background: #95333D;
+  background: #95333d;
   border: none;
   outline: none;
   border-radius: 5em;
@@ -11049,9 +11062,9 @@ button {
 button:hover {
   box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
   /*color: #6f6f6f;*/
-  color: #E6FA64;
+  color: #e6fa64;
   /*aumento colro de hover*/
-  background: #BA5C6F;
+  background: #ba5c6f;
 }
 
 #cajon-radio-button {

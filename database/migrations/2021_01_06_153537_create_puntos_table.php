@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAdmisionsTable extends Migration
+class CreatePuntosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,13 @@ class CreateAdmisionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('admisions', function (Blueprint $table) {
+        Schema::create('puntos', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
+            $table->foreignId('universidad_id')->references('id')->on('universidads');
+            $table->foreignId('admision_id')->references('id')->on('admisions');
+            $table->integer('buena');
+            $table->integer('mala');
+            $table->integer('blanco');
             $table->timestamps();
         });
     }
@@ -27,6 +31,6 @@ class CreateAdmisionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('admisions');
+        Schema::dropIfExists('puntos');
     }
 }

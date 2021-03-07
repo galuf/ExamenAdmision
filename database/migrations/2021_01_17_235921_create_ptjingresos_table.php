@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCalificacionsTable extends Migration
+class CreatePtjingresosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,14 @@ class CreateCalificacionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('calificacions', function (Blueprint $table) {
+        Schema::create('ptjingresos', function (Blueprint $table) {
             $table->id();
             $table->foreignId('universidad_id')->references('id')->on('universidads');
             $table->foreignId('admision_id')->references('id')->on('admisions');
-            $table->foreignId('asignatura_id')->references('id')->on('asignaturas');
             $table->foreignId('area_id')->references('id')->on('areas');
-            $table->float('ponderacion');
+            $table->foreignId('carrera_id')->references('id')->on('carreras');
+            $table->float('porc_max');
+            $table->float('porc_min');
             $table->timestamps();
         });
     }
@@ -31,6 +32,6 @@ class CreateCalificacionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('calificacions');
+        Schema::dropIfExists('ptjingresos');
     }
 }

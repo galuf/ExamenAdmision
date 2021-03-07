@@ -20,6 +20,10 @@ class CreateExamensTable extends Migration
             $table->foreignId('tipo_id')->references('id')->on('tipos');
             $table->foreignId('area_id')->references('id')->on('areas');
             $table->foreignId('admision_id')->references('id')->on('admisions');
+            $table->string('tiempo');
+            $table->integer('preguntas');
+            $table->float('puntaje_maximo');
+            $table->float('puntaje_minimo');
             $table->timestamps();
         });
     }

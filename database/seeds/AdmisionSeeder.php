@@ -13,9 +13,7 @@ class AdmisionSeeder extends Seeder
     public function run()
     {
         $adm = new Admision;
-        $adm->nombre = 'Cepre UNA';
-        $adm->preguntas = 60;
-        $adm->tiempo = '2:00:00';
+        $adm->nombre = 'Cepre';
         $adm->save();
     }
 }

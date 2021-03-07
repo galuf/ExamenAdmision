@@ -16,10 +16,8 @@ class CreateRespuestasTable extends Migration
         Schema::create('respuestas', function (Blueprint $table) {
             $table->id();
             $table->foreignId('examen_id')->references('id')->on('examens');
-            $table->foreignId('asignatura_id')->references('id')->on('asignaturas');
-            $table->foreignId('calificacion_id')->references('id')->on('calificacions');
-            $table->string('respuesta');
-            $table->integer('pregunta_num');
+            $table->text('respuestas');
+            $table->text('asignaturas');
             $table->timestamps();
         });
     }

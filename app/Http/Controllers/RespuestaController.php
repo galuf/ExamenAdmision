@@ -26,7 +26,7 @@ class RespuestaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create(Request $request)
-    {
+    {   
         $examen = Examen::find($request->id);
         $asignaturas = Asignatura::all();
         return view('examen.preguntas',compact('examen','asignaturas'));
@@ -40,17 +40,24 @@ class RespuestaController extends Controller
      */
     public function store(Request $request)
     {
-        $cal = Calificacion::where('asignatura_id','=',$request['asignatura_id'])
-                            ->where('area_id','=',$request['area_id'])
-                            ->first();
+        //echo "Examen id :".$request->id.'<br>';
+        $examen = Examen::find($request->id);
+        $cad_resp='';
+        $cad_asig='';
+        for($i=1;$i<=$examen->preguntas;$i++){
+            $re = 'adm-resp'.$i;
+            $asi = 'adm-prg'.$i;
+            $cad_resp .= $request[$re];
+            $cad_asig .= $request[$asi];
+            if($i != $examen->preguntas)
+                $cad_asig .= '-';
+        }
         $res = new Respuesta;
-        $res->examen_id = intval($request->examen_id);
-        $res->asignatura_id = $request['asignatura_id'];
-        $res->calificacion_id = intval($cal->id);
-        $res->respuesta = $request['respuesta'];
-        $res->pregunta_num = intval($request['pregunta']);
+        $res->examen_id = $examen->id;
+        $res->respuestas = $cad_resp;
+        $res->asignaturas = $cad_asig;
         $res->save();
-
+        echo "respuesta: ".$cad_resp." asignaturas: ".$cad_asig."<br>";
     }
 
     /**

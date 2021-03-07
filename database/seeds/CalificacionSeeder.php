@@ -14,36 +14,48 @@ class CalificacionSeeder extends Seeder
     {
         //Calificacion Biomedicas
         $cal = new Calificacion;
+        $cal->universidad_id = 1;
+        $cal->admision_id = 1;
         $cal->asignatura_id = 3;
         $cal->area_id = 1;
         $cal->ponderacion = 1.75;
         $cal->save();
 
         $cal = new Calificacion;
+        $cal->universidad_id = 1;
+        $cal->admision_id = 1;
         $cal->asignatura_id = 4;
         $cal->area_id = 1;
         $cal->ponderacion = 1.75;
         $cal->save();
 
         $cal = new Calificacion;
+        $cal->universidad_id = 1;
+        $cal->admision_id = 1;
         $cal->asignatura_id = 5;
         $cal->area_id = 1;
         $cal->ponderacion = 5.25;
         $cal->save();
 
         $cal = new Calificacion;
+        $cal->universidad_id = 1;
+        $cal->admision_id = 1;
         $cal->asignatura_id = 6;
         $cal->area_id = 1;
         $cal->ponderacion = 5.25;
         $cal->save();
 
         $cal = new Calificacion;
+        $cal->universidad_id = 1;
+        $cal->admision_id = 1;
         $cal->asignatura_id = 12;
         $cal->area_id = 1;
         $cal->ponderacion = 4.375;
         $cal->save();
 
         $cal = new Calificacion;
+        $cal->universidad_id = 1;
+        $cal->admision_id = 1;
         $cal->asignatura_id = 13;
         $cal->area_id = 1;
         $cal->ponderacion = 4.375;
@@ -51,42 +63,56 @@ class CalificacionSeeder extends Seeder
 
         // Calificaion Sociales
         $cal = new Calificacion;
+        $cal->universidad_id = 1;
+        $cal->admision_id = 1;
         $cal->asignatura_id = 7;
         $cal->area_id = 2;
         $cal->ponderacion = 4.375;
         $cal->save();
 
         $cal = new Calificacion;
+        $cal->universidad_id = 1;
+        $cal->admision_id = 1;
         $cal->asignatura_id = 8;
         $cal->area_id = 2;
         $cal->ponderacion = 4.375;
         $cal->save();
 
         $cal = new Calificacion;
+        $cal->universidad_id = 1;
+        $cal->admision_id = 1;
         $cal->asignatura_id = 9;
         $cal->area_id = 2;
         $cal->ponderacion = 2.625;
         $cal->save();
 
         $cal = new Calificacion;
+        $cal->universidad_id = 1;
+        $cal->admision_id = 1;
         $cal->asignatura_id = 10;
         $cal->area_id = 2;
         $cal->ponderacion = 2.625;
         $cal->save();
 
         $cal = new Calificacion;
+        $cal->universidad_id = 1;
+        $cal->admision_id = 1;
         $cal->asignatura_id = 11;
         $cal->area_id = 2;
         $cal->ponderacion = 4.375;
         $cal->save();
 
         $cal = new Calificacion;
+        $cal->universidad_id = 1;
+        $cal->admision_id = 1;
         $cal->asignatura_id = 12;
         $cal->area_id = 2;
         $cal->ponderacion = 4.375;
         $cal->save();
 
         $cal = new Calificacion;
+        $cal->universidad_id = 1;
+        $cal->admision_id = 1;
         $cal->asignatura_id = 13;
         $cal->area_id = 2;
         $cal->ponderacion = 4.375;
@@ -95,36 +121,48 @@ class CalificacionSeeder extends Seeder
         //Calificacion Ingenierias
 
         $cal = new Calificacion;
+        $cal->universidad_id = 1;
+        $cal->admision_id = 1;
         $cal->asignatura_id = 1;
         $cal->area_id = 3;
         $cal->ponderacion = 5.25;
         $cal->save();
 
         $cal = new Calificacion;
+        $cal->universidad_id = 1;
+        $cal->admision_id = 1;
         $cal->asignatura_id = 2;
         $cal->area_id = 3;
         $cal->ponderacion = 5.25;
         $cal->save();
 
         $cal = new Calificacion;
+        $cal->universidad_id = 1;
+        $cal->admision_id = 1;
         $cal->asignatura_id = 3;
         $cal->area_id = 3;
         $cal->ponderacion = 1.75;
         $cal->save();
 
         $cal = new Calificacion;
+        $cal->universidad_id = 1;
+        $cal->admision_id = 1;
         $cal->asignatura_id = 4;
         $cal->area_id = 3;
         $cal->ponderacion = 1.75;
         $cal->save();
 
         $cal = new Calificacion;
+        $cal->universidad_id = 1;
+        $cal->admision_id = 1;
         $cal->asignatura_id = 12;
         $cal->area_id = 3;
         $cal->ponderacion = 4.375;
         $cal->save();
 
         $cal = new Calificacion;
+        $cal->universidad_id = 1;
+        $cal->admision_id = 1;
         $cal->asignatura_id = 13;
         $cal->area_id = 3;
         $cal->ponderacion = 4.375;

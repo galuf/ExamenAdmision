@@ -17,5 +17,9 @@ class DatabaseSeeder extends Seeder
         $this->call(AreaSeeder::class);
         $this->call(AdmisionSeeder::class);
         $this->call(CalificacionSeeder::class);
+        $this->call(PuntosSeeder::class);
+        $this->call(CarreraSeeder::class);
+        $this->call(PtsIngresoSeeder::class);
+        $this->call(UserSeeder::class);
     }
 }

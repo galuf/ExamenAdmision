@@ -97,6 +97,42 @@
         </div>
 
         <div class="form-group">
+            <label for="tiempo">Tiempo</label>
+
+            <input type="time" class="form-control" name="tiempo">
+
+            @error('tiempo')
+                <span class="invalid-feedback d-block" role="alert">
+                    <strong> {{$message}} </strong>
+                </span>
+            @enderror
+        </div>
+
+        <div class="form-group">
+            <label for="preguntas">Numero de Preguntas</label>
+
+            <input type="number" class="form-control" name="preguntas">
+
+            @error('preguntas')
+                <span class="invalid-feedback d-block" role="alert">
+                    <strong> {{$message}} </strong>
+                </span>
+            @enderror
+        </div>
+
+        <div class="form-group">
+            <label for="maximo">Puntaje Maximo</label>
+
+            <input type="number" class="form-control" name="maximo">
+
+            @error('preguntas')
+                <span class="invalid-feedback d-block" role="alert">
+                    <strong> {{$message}} </strong>
+                </span>
+            @enderror
+        </div>
+
+        <div class="form-group">
           <input type="submit" class="btn btn-primary" value="Crear">
         </div>
 

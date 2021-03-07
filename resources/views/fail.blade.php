@@ -1,0 +1,1 @@
+<h1>Ruta Restringido, Acceso solo para administrador</h1>
